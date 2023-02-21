@@ -113,7 +113,7 @@
 			const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 			const options = {weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'};
 			const dayText = days <= 1 ? 'day' : 'days';
-			document.getElementById("countdown").innerHTML = `Countdown: ${days} ${dayText}, ${hours} hours, ${minutes} minutes, ${seconds} seconds until the ${nextDate.date.toLocaleDateString('en-GB', options)} bin`;
+			document.getElementById("countdown").innerHTML = `It is currently ${days} ${dayText}, ${hours} hours, ${minutes} minutes, ${seconds} seconds until the ${nextDate.date.toLocaleDateString('en-GB', options)} bin collection.`;
 		}
 	</script>
 </body>
